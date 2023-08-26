@@ -1,0 +1,32 @@
+#header-main-div{
+background-color: #0F4905;
+height: 13vh;
+display: flex;
+justify-content: space-between;
+}
+
+#pantry-main-logo{
+  height:10vh;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+
+#nav-bar{
+  display: flex;
+  width: 35vw;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.nav-bar-links{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 15px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.nav-bar-links:hover{
+  border-bottom: solid 2px #FF5F05;
+  
+}
