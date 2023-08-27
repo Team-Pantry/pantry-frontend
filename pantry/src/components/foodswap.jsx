@@ -53,6 +53,7 @@ const FoodSwap = () => {
                     })
                 }
             </div>
+            <div>
             <div id='grocery-list'>
                 <p id='grocery-list-title'>My grocery list</p>
                 <ul id='grocery-item-list'>
@@ -69,7 +70,16 @@ const FoodSwap = () => {
                 <input type='text' id='grocery-item'></input>
                 <button className="button" id='grocery-button'>Add item</button>
                 </div>
-
+            </div>
+            <div id='post-form-div'>
+                <p id='new-listing-title'>Create a new listing</p>
+                <input id='post-title' placeholder="Item name"></input>
+                <textarea id='post-desc' placeholder="Item description"></textarea>
+                <div id='post-bottom-div'>
+                    <button className="button" id='post-button'>Add image</button>
+                    <button className="button"  id='post-button'>Post listing</button>
+                </div>
+            </div>
             </div>
         </div>
     )
