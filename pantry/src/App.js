@@ -3,7 +3,8 @@ import './App.css';
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import {
   Header,
-  LandingPage
+  LandingPage,
+  Footer
 } from './components'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         }>
         </Route>
         </Routes>
+      <Footer />  
     </div>
     </BrowserRouter>
   );
