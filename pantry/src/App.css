@@ -199,7 +199,7 @@ align-items: center;
 
 #main-shelf{
   min-height: 73vh;
-  width: 80vw;
+  width: 70vw;
 }
 
 .item-image{
@@ -222,6 +222,7 @@ align-items: center;
   color: #0F4905;
   margin-top: 3px;
   margin-bottom: 0px;
+  font-weight: 500;
 }
 
 .item-name:hover{

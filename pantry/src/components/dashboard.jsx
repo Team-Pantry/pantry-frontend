@@ -1,6 +1,7 @@
 import React, { useEffect, useState }  from "react";
 import { fetchFromAPI } from "../api";
 import { Link } from "react-router-dom";
+import dummyData from "../api/dummy_data";
 
 
 const Dashboard = () => {
@@ -8,11 +9,8 @@ const Dashboard = () => {
     const [items, setItems] = useState([]);
     
     const getAllItems = async() => {
-        const myItems = await fetchFromAPI({
-            path:'photos'
-        })
-        console.log(myItems)
-        setItems(myItems.slice(0, 1000))
+
+        setItems(dummyData)
 
     }
 
@@ -35,11 +33,11 @@ const Dashboard = () => {
                     items.map(item => {
                         return(
                             <div key={item.id} className="item">
-                                <img className='item-image' src={item.url} />
+                                <img className='item-image' src={item.thumbnail} />
                                 <Link to={`/dashboard/food/${item.id}`}>
-                                <p className="item-name">Item Title</p>
+                                <p className="item-name">{item.title}</p>
                                 </Link>
-                                <p className="shared-by">Shared by Shruthi</p>
+                                <p className="shared-by">Shared by {item.author}</p>
                             </div>
                         )
                     })
