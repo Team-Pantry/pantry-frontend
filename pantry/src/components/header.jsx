@@ -11,7 +11,7 @@ return(
             <Link to='/dashboard'><p className="nav-bar-links"> Dashboard</p></Link>
             <Link to='/swap'><p className="nav-bar-links"> Food swap</p></Link>
             <p className="nav-bar-links"> Search</p>
-            <Link to='/users/register'><p className="nav-bar-links"> Sign Up/Login</p></Link>
+            <Link to='/users/register'><p className="nav-bar-links"> Logout</p></Link>
         </div>
     </div>
 )

@@ -25,6 +25,11 @@ const Dashboard = () => {
     return(
         <div id='dashboard-main-div'>
             <h1 id='dashboard-title'>What's In Our Pantry Today</h1>
+            <div id='search-div'>
+                <input type='text' placeholder="Search for an item" id='search-bar'></input>
+                <input type='text' placeholder="Location" id='location-search'></input>
+                <button className="button" id='search-button'>Search</button>
+            </div>
             <div id='main-shelf'>
                 {
                     items.map(item => {
