@@ -30,6 +30,7 @@ const SingleFood = () => {
             <div id='single-food-right'>
                 <p id='single-food-desc'>{foodItem.description}</p>
                 <p id='traded-by'>Traded by: {foodItem.author}</p>
+                <p id='traded-by'>Trader's grocery list: {foodItem.groceryList}</p>
                 <button className="button" id='single-product-button'>Request a swap</button>
             </div>
         </div>

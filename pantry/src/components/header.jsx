@@ -1,18 +1,37 @@
 import React, {useState} from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
-const Header = () => {
+const Header = ({setUser}) => {
+    const navigate = useNavigate()
 
 return(
-    <div id='header-main-div'>
-        <Link to='/'><img id='pantry-main-logo' src={require("./pantry-main-logo.png")}/></Link>
-        <div id="nav-bar">
+<>
+    {
+        localStorage.getItem('username')
+
+        ?   (<div id='header-main-div'>
+            <Link to='/'><img id='pantry-main-logo' src={require("./pantry-main-logo.png")}/></Link>
+                <div id="nav-bar">
             <Link to='/dashboard'><p className="nav-bar-links"> Dashboard</p></Link>
             <Link to='/swap'><p className="nav-bar-links"> Food swap</p></Link>
-            <Link to='/users/register'><p className="nav-bar-links"> Logout</p></Link>
+            <button className="nav-bar-links" id='logout-button' onClick={() => {
+                localStorage.removeItem('username')
+                setUser('')
+                navigate('/')
+            }}> Logout</button>
         </div>
-    </div>
+        </div>)
+
+        : (<div id='header-main-div'>
+            <Link to='/'><img id='pantry-main-logo' src={require("./pantry-main-logo.png")}/></Link>
+            <div id="nav-bar">
+                <Link to='/users/register'><p className="nav-bar-links" id="sign-in-header"> Sign in or Register</p></Link>
+            </div>
+            </div>)
+    }
+    </>
+
 )
 
 

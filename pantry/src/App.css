@@ -114,9 +114,7 @@ justify-content: space-between;
  border: #0F4905 solid 2px;
 }
 
-#landing-button-div{
-  
-}
+
 
 #footer-main-div{
 height: 7vw;
@@ -418,4 +416,15 @@ font-weight: bold;
 
 #post-button{
   width: 120px;
+}
+
+#logout-button{
+  background-color: #0F4905;
+  border: none;
+  margin-top: 13px;
+  position: relative
+}
+
+#sign-in-header{
+  margin-left: 300px;
 }
