@@ -187,3 +187,48 @@ align-items: center;
 #login-main-div{
   min-height: 73vh;
 }
+
+#dashboard-main-div{
+  min-height: 73vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+#main-shelf{
+  min-height: 73vh;
+  width: 80vw;
+}
+
+.item-image{
+  height: 150px;
+  width: 150px;
+}
+
+#main-shelf{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+
+.item{
+  margin: 15px;
+}
+
+.item-name{
+  color: #0F4905;
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+
+.shared-by{
+  margin-top: 0px;
+  color:#FF5F05;
+
+}
+
+#dashboard-title{
+  color:#0F4905;
+}

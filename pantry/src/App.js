@@ -6,7 +6,8 @@ import {
   LandingPage,
   Footer,
   Register,
-  Login
+  Login,
+  Dashboard
 } from './components'
 
 function App() {
@@ -25,6 +26,10 @@ function App() {
         </Route>
         <Route exact path='/users/login' element={
           <Login />
+        }>
+        </Route>
+        <Route exact path='/dashboard' element={
+          <Dashboard />
         }>
         </Route>
         </Routes>
