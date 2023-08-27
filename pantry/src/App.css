@@ -187,3 +187,32 @@ align-items: center;
 #login-main-div{
   min-height: 73vh;
 }
+
+#dashboard-main-div{
+  min-height: 73vh;
+  display: flex;
+  justify-content: center;
+}
+
+#main-shelf{
+  min-height: 73vh;
+  width: 80vw;
+}
+
+.item-image{
+  height: 200px;
+  width: 200px;
+}
+
+#main-shelf{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  background-color:#7d411b;
+  padding-left: 30px;
+}
+
+.item{
+  margin-right: 30px;
+  margin-top: 30px;
+}
