@@ -377,3 +377,44 @@ font-weight: bold;
 #search-button{
   width: 8vw;
 }
+
+#post-form-div{
+  display: flex;
+  flex-direction: column;
+  border: solid 1px #0F4905;
+  margin-top: 5vh;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#post-title{
+  height: 25px;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  border:#0F4905 solid 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#new-listing-title{
+  color:#0F4905;
+  font-weight: 500;
+  
+}
+
+#post-desc{
+  height: 15vh;
+  border:#0F4905 solid 1px;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 5px;
+}
+
+#post-bottom-div{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#post-button{
+  width: 120px;
+}
