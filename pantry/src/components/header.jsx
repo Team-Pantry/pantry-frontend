@@ -6,7 +6,7 @@ const Header = () => {
 
 return(
     <div id='header-main-div'>
-        <img id='pantry-main-logo' src={require("./pantry-main-logo.png")}/>
+        <Link to='/'><img id='pantry-main-logo' src={require("./pantry-main-logo.png")}/></Link>
         <div id="nav-bar">
             <p className="nav-bar-links"> Dashboard</p>
             <p className="nav-bar-links"> Trade Requests</p>
