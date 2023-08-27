@@ -191,7 +191,9 @@ align-items: center;
 #dashboard-main-div{
   min-height: 73vh;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
 }
 
 #main-shelf{
@@ -200,19 +202,33 @@ align-items: center;
 }
 
 .item-image{
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 }
 
 #main-shelf{
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
-  background-color:#7d411b;
-  padding-left: 30px;
+  justify-content: space-evenly;
 }
 
 .item{
-  margin-right: 30px;
-  margin-top: 30px;
+  margin: 15px;
+}
+
+.item-name{
+  color: #0F4905;
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+
+.shared-by{
+  margin-top: 0px;
+  color:#FF5F05;
+
+}
+
+#dashboard-title{
+  color:#0F4905;
 }
