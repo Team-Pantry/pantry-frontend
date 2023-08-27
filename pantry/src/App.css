@@ -273,3 +273,45 @@ font-weight: bold;
   font-weight: 500;
 }
 
+#swap-main{
+  height: 73vh;
+  display: flex;
+}
+
+#swap-requests{
+  width: 70vw;
+}
+
+#grocery-list{
+  margin-top: 10vh;
+  border: solid 1px #0F4905;
+  color:#0F4905;
+  width: 20vw;
+  height: 50vh;
+}
+
+#add-grocery{
+  display: flex;
+  justify-content: space-around;
+}
+
+#grocery-button{
+  width: 100px;
+}
+
+#grocery-item{
+  width: 150px;
+  margin-left: 10px;
+}
+
+#grocery-item-list{
+  height: 35vh;
+  margin-top: 3px;
+}
+
+#grocery-list-title{
+  font-weight: 500;
+  margin-left: 15px;
+  font-size: 17px;
+  margin-bottom: 3px;
+}
