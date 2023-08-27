@@ -21,7 +21,7 @@ const dummyData = [
 
     {
         'id': '3',
-        'title': 'Sourdough bread - 1 loaf',
+        'title': 'Sourdough bread',
         'author': 'Shruthi',
         'description': 'Roommate bought sourdough bread instead of buttermilk bread.',
         'image': 'https://live.staticflickr.com/7850/46396903674_fec138a0cb_b.jpg',
@@ -49,7 +49,7 @@ const dummyData = [
 
     {
         'id': '6',
-        'title': '3.75lb Strawberries',
+        'title': '3lb Strawberries',
         'author': 'Melanie',
         'description': 'Went strawberry picking to make strawberry jam, had some leftover!',
         'image': 'https://i5.walmartimages.ca/images/Enlarge/217/284/6000197217284.jpg',
@@ -68,7 +68,7 @@ const dummyData = [
 
     {
         'id': '8',
-        'title': '9 slices of Provolone cheese',
+        'title': 'Provolone cheese',
         'author': 'Seth',
         'description': 'Going out of town for a week, this cheese expires in 5 days',
         'image': 'https://www.sargento.com/assets/20120_SL_Prvln_16oz_QrtrLft__PadWzc2Miw4NzIsIkZGRkZGRiIsMF0.png',
@@ -86,7 +86,7 @@ const dummyData = [
 
     {
         'id': '10',
-        'title': '5 Corn on the Cobs',
+        'title': '5 Corn Cobs',
         'author': 'Jenni',
         'description': 'Tired of eating corn on the cob',
         'image': 'https://www.eatingwell.com/thmb/uFOVY0GUIcfiVE8nyycZG_CilvQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/EWL-howtofreezefreshcornonthecob-1-6be222de346d493a80e4511559e5881d.jpg',
