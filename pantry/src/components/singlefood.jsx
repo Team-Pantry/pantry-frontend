@@ -1,19 +1,35 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { useParams } from "react-router";
+import dummyData from "../api/dummy_data";
 
 const SingleFood = () => {
-    
+    const [foodItem, setFoodItem] = useState({})
+
     const {id} = useParams();
-    console.log(id)
+    const getFood = async() => {
+        for(let i = 0; i < dummyData.length; i++){
+            if (dummyData[i].id === id){
+                console.log(dummyData[i])
+                setFoodItem(dummyData[i])
+            }
+        }
+    }
+
+    useEffect(() => {
+        const loadItem = async() => {
+            await getFood();
+        }
+        loadItem();
+    }, [])
     return(
         <div id='single-food-main'>
             <div id='single-food-left'>
-                <h1 id='single-food-name'>81 carrots</h1>
-                <img id='single-product-image' src="https://seed2plant.in/cdn/shop/products/carrotseeds.jpg?v=1604032858" />
+                <h1 id='single-food-name'>{foodItem.title}</h1>
+                <img id='single-product-image' src={foodItem.image} />
             </div>
             <div id='single-food-right'>
-                <p id='single-food-desc'>Accidentally bought 90 carrots instead of 9. I like carrots but not THAT much. Let me know if you'd like to trade.</p>
-                <p id='traded-by'>Traded by: Shruthi</p>
+                <p id='single-food-desc'>{foodItem.description}</p>
+                <p id='traded-by'>Traded by: {foodItem.author}</p>
                 <button className="button" id='single-product-button'>Request a swap</button>
             </div>
         </div>
