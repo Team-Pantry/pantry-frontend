@@ -41,7 +41,7 @@ justify-content: space-between;
 }
 
 #landing-img{
-  height: 80vh;
+  height: 75vh;
 }
 
 #landing-blurb-div{
@@ -93,4 +93,13 @@ justify-content: space-between;
 
 #landing-button-div{
   width: 43vw;
+}
+
+#footer-main-div{
+height: 7vw;
+background-color: #0F4905;
+display: flex;
+color: white;
+padding-left: 30px;
+align-items: center;
 }
