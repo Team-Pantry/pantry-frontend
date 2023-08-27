@@ -157,6 +157,7 @@ align-items: center;
   color: #0F4905;
   border: #0F4905 solid 1px;
   margin-bottom: 15px;
+  font-size: 17px;
 }
 
 .user-input-label{
@@ -181,4 +182,8 @@ align-items: center;
   text-decoration: underline;
   font-size: 12px;
   margin-top: 20px;
+}
+
+#login-main-div{
+  min-height: 73vh;
 }

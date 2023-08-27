@@ -5,7 +5,8 @@ import {
   Header,
   LandingPage,
   Footer,
-  Register
+  Register,
+  Login
 } from './components'
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
         </Route>
         <Route exact path='/users/register' element={
           <Register />
+        }>
+        </Route>
+        <Route exact path='/users/login' element={
+          <Login />
         }>
         </Route>
         </Routes>
