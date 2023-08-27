@@ -274,8 +274,9 @@ font-weight: bold;
 }
 
 #swap-main{
-  height: 73vh;
+  min-height: 73vh;
   display: flex;
+  margin-bottom: 30px;
 }
 
 #swap-requests{
@@ -314,4 +315,43 @@ font-weight: bold;
   margin-left: 15px;
   font-size: 17px;
   margin-bottom: 3px;
+}
+
+#swap-requests{
+  margin-left: 30px;
+  
+}
+
+.swap-request{
+  border: solid 1px #0F4905;
+  width: 60vw;
+  padding-left: 30px;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+  color:#0F4905;
+  font-weight: 500;
+}
+
+#swap-reply{
+  width: 50vw;
+}
+
+#swap-reply-input{
+  width: 40vw;
+  color: #0F4905;
+  border-color: #0F4905;
+  border-width: 1px;
+  height: 25px;
+  margin-right: 15px;
+  padding-left: 10px;
+}
+
+::placeholder{
+  color: #0F4905;
+}
+
+#swap-requests-title{
+  font-size: 25px;
+  color: #0F4905;
+  font-weight: bold;
 }
