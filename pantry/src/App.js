@@ -7,7 +7,8 @@ import {
   Footer,
   Register,
   Login,
-  Dashboard
+  Dashboard,
+  SingleFood
 } from './components'
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
         </Route>
         <Route exact path='/dashboard' element={
           <Dashboard />
+        }>
+        </Route>
+        <Route exact path='/dashboard/food/:id' element={
+          <SingleFood />
         }>
         </Route>
         </Routes>
