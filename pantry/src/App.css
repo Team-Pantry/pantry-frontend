@@ -96,15 +96,16 @@ justify-content: space-between;
 }
 
 .button:hover{
-  background-color: #0F4905;
-  color: white;
-  
+  border-width: 2px;
+  font-weight: bold;
 }
 
 #landing-button{
-  height: 45px;
+  height: 35px;
   width: 300px;
-  font-size: 30px;
+  font-size: 25px;
+
+  margin-top: 10px;
 }
 
 
@@ -223,12 +224,52 @@ align-items: center;
   margin-bottom: 0px;
 }
 
+.item-name:hover{
+font-weight: bold;
+}
+
 .shared-by{
   margin-top: 0px;
-  color:#FF5F05;
+  color:#0F4905;
 
 }
 
 #dashboard-title{
   color:#0F4905;
 }
+
+#single-food-main{
+  height: 73vh;
+  display: flex;
+  margin-top: 30px;
+}
+
+#single-product-image{
+  height: 60vh;
+}
+
+#single-food-left{
+  margin-left: 40px;
+}
+
+#single-food-name{
+  color:#0F4905
+}
+
+#single-food-right{
+  margin-top: 15vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+#single-food-desc{
+  color: #0F4905;
+  font-size: 17px;
+}
+
+#traded-by{
+  font-size: 17px;
+  color: #FF5F05;
+  font-weight: 500;
+}
+

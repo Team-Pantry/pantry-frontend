@@ -1,6 +1,6 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState }  from "react";
 import { fetchFromAPI } from "../api";
+import { Link } from "react-router-dom";
 
 
 const Dashboard = () => {
@@ -31,7 +31,9 @@ const Dashboard = () => {
                         return(
                             <div key={item.id} className="item">
                                 <img className='item-image' src={item.url} />
+                                <Link to={`/dashboard/food/${item.id}`}>
                                 <p className="item-name">Item Title</p>
+                                </Link>
                                 <p className="shared-by">Shared by Shruthi</p>
                             </div>
                         )
