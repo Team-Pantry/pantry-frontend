@@ -91,7 +91,14 @@ justify-content: space-between;
   border-radius: 20px;
   width: 200px;
   height: 30px;
-  color: #0F4905
+  color: #0F4905;
+  font-size: 15px;
+}
+
+.button:hover{
+  background-color: #0F4905;
+  color: white;
+  
 }
 
 #landing-button{
@@ -120,5 +127,58 @@ align-items: center;
 }
 
 #register-main-div{
-  min-height: 72vh;
+  min-height: 73vh;
+}
+
+#register-content-container{
+  height: 72vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#register-title{
+  font-weight: bold;
+  font-size: 30px;
+  color:#0F4905;
+  margin-bottom: 10px;
+}
+
+#register-form{
+  margin-top: 5px;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-input{
+  height: 30px;
+  color: #0F4905;
+  border: #0F4905 solid 1px;
+  margin-bottom: 15px;
+}
+
+.user-input-label{
+  color: #0F4905;
+}
+
+#register-button-div{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#already-reg{
+  color:#FF5F05;
+  text-decoration: underline;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+#already-reg:hover{
+  color:#b45016;
+  text-decoration: underline;
+  font-size: 12px;
+  margin-top: 20px;
 }
