@@ -8,7 +8,8 @@ import {
   Register,
   Login,
   Dashboard,
-  SingleFood
+  SingleFood,
+  FoodSwap
 } from './components'
 
 function App() {
@@ -35,6 +36,10 @@ function App() {
         </Route>
         <Route exact path='/dashboard/food/:id' element={
           <SingleFood />
+        }>
+        </Route>
+        <Route exact path='/swap' element={
+          <FoodSwap />
         }>
         </Route>
         </Routes>
